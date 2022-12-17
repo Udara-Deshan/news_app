@@ -7,17 +7,17 @@ class NewsArticles extends StatefulWidget {
   const NewsArticles({super.key, required this.newsUrl});
   final String newsUrl;
   @override
-  _NewsArticlesState createState() => _NewsArticlesState();
+  _ArticlesState createState() => _ArticlesState();
 }
 
-class _NewsArticlesState extends State<NewsArticles> {
+class _ArticlesState extends State<NewsArticles> {
   final Completer<WebViewController> _completer =
       Completer<WebViewController>();
   late bool _isLoadingPage;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true, title: const Text('Today News')),
+      appBar: AppBar(centerTitle: true, title: const Text('Website')),
       body: Stack(
         children: [
           WebView(

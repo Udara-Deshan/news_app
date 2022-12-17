@@ -1,4 +1,5 @@
 const List<Map<String, String>> listOfCountry = [
+  {'name': 'Sri Lanka', 'code': 'lk'},
   {'name': 'INDIA', 'code': 'in'},
   {'name': 'USA', 'code': 'us'},
   {'name': 'MEXICO', 'code': 'mx'},
